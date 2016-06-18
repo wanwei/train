@@ -15,6 +15,7 @@ public final class FileToBuf {
 	public static byte[] file2Buf(File fobj) {
 		if (fobj == null || !fobj.exists())
 			return null;
+		//test git
 		long len = fobj.length();
 		if (len > Integer.MAX_VALUE)
 			return null;
